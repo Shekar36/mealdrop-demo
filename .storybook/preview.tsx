@@ -16,6 +16,21 @@ import { breakpoints } from '../src/styles/breakpoints'
 import { GlobalStyle } from '../src/styles/GlobalStyle'
 import { darkTheme, lightTheme } from '../src/styles/theme'
 
+export default {
+  title: "My stories",
+  component: Button,
+};
+
+export const myStory = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/3Q1HTCalD0lJnNvcMoEw1x/Mealdrop?node-id=90-2&t=bwwcHsFNHE8UaVYv-1",
+    },
+  },
+};
+
+
 initialize({
   quiet: true,
   onUnhandledRequest: ({ url, method }) => {
