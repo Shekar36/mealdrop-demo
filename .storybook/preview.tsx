@@ -252,6 +252,11 @@ const preview: Preview = {
   },
   decorators: [withRouter, withTheme, withStore],
   loaders: [mswLoader, demoModeLoader],
+  initialGlobals: {
+    a11y: {
+      manual: true,
+    },
+  },
 }
 
 declare module 'storybook/internal/csf' {

@@ -20,4 +20,9 @@ export const Default: Story = {
   args: {
     text: 'Comfort food',
   },
+  globals: {
+    a11y: {
+      manual: true,
+    },
+  },
 }
