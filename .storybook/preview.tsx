@@ -25,11 +25,27 @@ export const myStory = {
   parameters: {
     design: {
       type: "figma",
-      url: "https://www.figma.com/design/3Q1HTCalD0lJnNvcMoEw1x/Mealdrop?node-id=90-2&t=bwwcHsFNHE8UaVYv-1",
+      url: "https://www.figma.com/design/VS8d6KtdXnDX3BepiTWW0j/Mealdrop--Copy-?node-id=7-2&t=JLGrWEr0RVt9NOjY-1",
     },
   },
 };
 
+// MyComponent.stories.jsx
+import { MyComponent } from "./MyComponent";
+
+export default {
+  title: "MyComponent",
+  component: MyComponent,
+};
+
+export const myStory = {
+  parameters: {
+    design: {
+      type: "figma",
+      url: "https://www.figma.com/design/VS8d6KtdXnDX3BepiTWW0j/Mealdrop--Copy-?node-id=7-2&t=JLGrWEr0RVt9NOjY-1",
+    },
+  },
+};
 
 initialize({
   quiet: true,

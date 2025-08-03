@@ -13,7 +13,7 @@ const config: StorybookConfig = {
     // TODO: this addon has a bad instrumentation of getConfig.asyncWrapper that should be fixed
     'storybook-addon-test-codegen',
     '@storybook/addon-docs',
-    '@storybook/addon-designs'
+
   ],
   typescript: {
     reactDocgen: 'react-docgen',
@@ -22,3 +22,20 @@ const config: StorybookConfig = {
   framework: '@storybook/react-vite',
 }
 export default config
+
+// .storybook/main.ts
+import type { StorybookConfig } from "@storybook/your-framework";
+
+const config: StorybookConfig = {
+  stories: ["../stories/**/*.stories.@(js|jsx|ts|tsx)"],
+  addons: ["@storybook/addon-essentials", "@storybook/addon-designs"],
+  framework: {
+    name: "@storybook/your-framework",
+    options: {},
+  },
+  docs: {
+    autodocs: true,
+  },
+};
+
+export default config;
