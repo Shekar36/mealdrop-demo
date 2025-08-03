@@ -291,3 +291,14 @@ declare module 'storybook/internal/csf' {
   }
 }
 export default preview
+
+// Replace your-framework with the framework you are using, e.g. react-vite, nextjs, vue3-vite, etc.
+import type { Preview } from '@storybook/shekar-test';
+
+const preview: Preview = {
+  // ...rest of preview
+  //👇 Enables auto-generated documentation for all stories
+  tags: ['autodocs'],
+};
+
+export default preview;
